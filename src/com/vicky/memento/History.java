@@ -1,5 +1,10 @@
 package com.vicky.memento;
 
+/**
+ * Caretaker: Holds an ArrayList that contains all previous versions of the Memento. It can store and retrieve stored Mementos.
+ */
+
+
 import java.util.ArrayList;
 import java.util.List;
 

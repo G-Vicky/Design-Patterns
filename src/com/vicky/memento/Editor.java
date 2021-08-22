@@ -1,5 +1,9 @@
 package com.vicky.memento;
 
+/**
+ * Originator: Sets and Gets values from the currently targeted Memento. Creates new Mementos and assigns current values to them.
+ */
+
 public class Editor {
     private String content;
 
