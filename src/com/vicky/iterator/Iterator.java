@@ -1,7 +1,7 @@
 package com.vicky.iterator;
 
-public interface Iterator {
+public interface Iterator<T> {
     void next();
-    String current();
-    boolean isDone();
+    T current();
+    boolean hasNext();
 }

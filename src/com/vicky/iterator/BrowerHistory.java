@@ -3,27 +3,25 @@ package com.vicky.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BrowerHistory{
-    private List<String> urls;
-    private int index;
+public class BrowerHistory<T>{
+    private final List<T> urls;
 
     public BrowerHistory() {
         urls = new ArrayList<>();
-        index = -1;
     }
 
-    public void push(String state) {
-        urls.add(state);
+    public void push(T url) {
+        urls.add(url);
     }
 
-    public String pop() {
+    public T pop() {
         int lastIndex = urls.size() - 1;
-        String state = urls.get(lastIndex);
-        urls.remove(state);
-        return state;
+        T url = urls.get(lastIndex);
+        urls.remove(url);
+        return url;
     }
 
-    public Iterator createIterator() {
-        return new ListIterator(urls);
+    public Iterator<T> createIterator() {
+        return new ListIterator<T>(urls);
     }
 }

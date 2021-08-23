@@ -1,10 +1,10 @@
 package com.vicky.iterator;
 
-public class ArrayIterator implements Iterator{
-    private String[] array;
+public class ArrayIterator<T> implements Iterator<T>{
+    private T[] array;
     private int index;
 
-    public ArrayIterator(String[] array) {
+    public ArrayIterator(T[] array) {
         this.array = array;
         index = 0;
     }
@@ -15,12 +15,12 @@ public class ArrayIterator implements Iterator{
     }
 
     @Override
-    public String current() {
+    public T current() {
         return array[index];
     }
 
     @Override
-    public boolean isDone() {
+    public boolean hasNext() {
         return index == array.length-1;
     }
 }

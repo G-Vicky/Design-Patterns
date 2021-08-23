@@ -43,7 +43,14 @@ In software engineering, a design pattern is a **general repeatable solution** t
 
 ## State
 
-* Allows an object to alter its behaviour when its internal state changes. The object will appear to change its clas.
+* Allows an object to alter its behaviour when its internal state changes. The object will appear to change its class.
 * **Context**(Account): Maintains an instance of a ConcreteState subclass that defines the current state.
 * **State**: Defines an interface for encapsulating the behavior associated with a particular state of the Context.
 * **Concrete State**: Each subclass implements a behavior associated with a state of Context.
+
+## Iterator
+
+* The Iterator pattern provides you with a uniform way to access different collections of Objects.
+* If you get an Array, ArrayList and Hashtable of Objects, you pop out an iterator for each and treat them the same.
+* This provides a uniform way to cycle through different collections.
+* You can also write polymorphic code because you can refer to each collection of objects because they'll implement the same interface.
