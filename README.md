@@ -54,3 +54,8 @@ In software engineering, a design pattern is a **general repeatable solution** t
 * If you get an Array, ArrayList and Hashtable of Objects, you pop out an iterator for each and treat them the same.
 * This provides a uniform way to cycle through different collections.
 * You can also write polymorphic code because you can refer to each collection of objects because they'll implement the same interface.
+
+## Strategy pattern
+
+* Also known as **Policy Pattern**.
+* Used when we have multiple algorithm for a specific task and client decides the actual implementation to be used at runtime.
