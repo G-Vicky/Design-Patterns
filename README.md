@@ -59,3 +59,10 @@ In software engineering, a design pattern is a **general repeatable solution** t
 
 * Also known as **Policy Pattern**.
 * Used when we have multiple algorithm for a specific task and client decides the actual implementation to be used at runtime.
+
+## Template pattern
+
+* Used to create a group of subclasses that have to execute a similar group of methods.
+* You create an abstract class that contains a method called the template method.
+* The template Method contains a series of method calls that every subclass object will call.
+* The subclass objects can override some of the method calls.
